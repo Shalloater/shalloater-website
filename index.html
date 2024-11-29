@@ -18,12 +18,35 @@
             color: #333;
             padding: 20px 0;
         }
+        header img {
+            width: 120px;
+            height: auto;
+            margin-bottom: 20px;
+        }
         header h1 {
             font-size: 2.5em;
             margin: 0;
         }
         header p {
             font-size: 1.2em;
+        }
+        .social-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .social-buttons a button {
+            background-color: #ff99c8;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 1em;
+        }
+        .social-buttons a button:hover {
+            background-color: #ff80a4;
         }
         main {
             padding: 20px;
@@ -42,17 +65,23 @@
             color: #f984a3;
             margin-bottom: 10px;
         }
-        button {
-            background-color: #ff99c8;
+        .card textarea {
+            width: 100%;
+            height: 100px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        .card button {
+            background-color: #f984a3;
             border: none;
             color: white;
             padding: 10px 20px;
             border-radius: 20px;
             cursor: pointer;
-            font-size: 1em;
-            margin-top: 10px;
         }
-        button:hover {
+        .card button:hover {
             background-color: #ff80a4;
         }
         footer {
@@ -66,8 +95,20 @@
 </head>
 <body>
     <header>
+        <img src="https://cdn.jsdelivr.net/gh/Shalloater/image-saving@main/img/knitting.png" alt="Logo">
         <h1>Shalloater's Handcraft World</h1>
         <p>用心感受手工的温度</p>
+        <div class="social-buttons">
+            <a href="https://www.zhihu.com/people/lwuoa/posts" target="_blank">
+                <button>知乎主页</button>
+            </a>
+            <a href="https://b23.tv/0IlNiRB?share_medium=android&share_source=qq&bbid=XYAACF7AC759C7829AE57B2C23BC5E6840CDA&ts=1732865145940" target="_blank">
+                <button>B站主页</button>
+            </a>
+            <a href="https://www.xiaohongshu.com/explore" target="_blank">
+                <button>小红书主页</button>
+            </a>
+        </div>
     </header>
     <main>
         <div class="card">
@@ -76,11 +117,11 @@
             <p>未来我还计划探索更多手工领域，希望你能和我一起感受创造的乐趣！</p>
         </div>
         <div class="card">
-            <h2>联系我</h2>
-            <p>欢迎访问我的小红书主页，了解更多我的作品！</p>
-            <a href="https://www.xiaohongshu.com/user/profile/611aede4000000000101ea89" target="_blank">
-                <button>我的小红书</button>
-            </a>
+            <h2>留言板</h2>
+            <p>留下你的想法或问题吧！</p>
+            <textarea placeholder="在这里写下你的留言..."></textarea>
+            <br>
+            <button>提交留言</button>
         </div>
     </main>
     <footer>
